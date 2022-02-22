@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="fib_sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="fib_sim" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="813250fs"></ZoomStartTime>
+      <ZoomEndTime time="1007251fs"></ZoomEndTime>
+      <Cursor1Time time="1000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="336"></NameColumnWidth>
+      <ValueColumnWidth column_width="151"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="24" />
+   <wvobject fp_name="/fib_sim/run" type="logic">
+      <obj_property name="ElementShortName">run</obj_property>
+      <obj_property name="ObjectShortName">run</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fib_sim/step" type="logic">
+      <obj_property name="ElementShortName">step</obj_property>
+      <obj_property name="ObjectShortName">step</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fib_sim/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fib_sim/in" type="array">
+      <obj_property name="ElementShortName">in[4:0]</obj_property>
+      <obj_property name="ObjectShortName">in[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fib_sim/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fib_sim/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fib_sim/top0/CPU/a" type="array">
+      <obj_property name="ElementShortName">a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">a[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fib_sim/top0/CPU/dflush" type="logic">
+      <obj_property name="ElementShortName">dflush</obj_property>
+      <obj_property name="ObjectShortName">dflush</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fib_sim/top0/CPU/eflush" type="logic">
+      <obj_property name="ElementShortName">eflush</obj_property>
+      <obj_property name="ObjectShortName">eflush</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fib_sim/top0/clk_cpu" type="logic">
+      <obj_property name="ElementShortName">clk_cpu</obj_property>
+      <obj_property name="ObjectShortName">clk_cpu</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fib_sim/top0/CPU/PCE" type="array">
+      <obj_property name="ElementShortName">PCE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PCE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fib_sim/top0/CPU/BPU/set" type="logic">
+      <obj_property name="ElementShortName">set</obj_property>
+      <obj_property name="ObjectShortName">set</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fib_sim/top0/CPU/BPU/taken" type="logic">
+      <obj_property name="ElementShortName">taken</obj_property>
+      <obj_property name="ObjectShortName">taken</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fib_sim/top0/CPU/BPU/set_tb_entry" type="array">
+      <obj_property name="ElementShortName">set_tb_entry[9:0]</obj_property>
+      <obj_property name="ObjectShortName">set_tb_entry[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fib_sim/top0/CPU/BPU/last_predict" type="logic">
+      <obj_property name="ElementShortName">last_predict</obj_property>
+      <obj_property name="ObjectShortName">last_predict</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fib_sim/top0/CPU/predict_error" type="array">
+      <obj_property name="ElementShortName">predict_error[1:0]</obj_property>
+      <obj_property name="ObjectShortName">predict_error[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fib_sim/top0/CPU/PC" type="array">
+      <obj_property name="ElementShortName">PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fib_sim/top0/CPU/error_count" type="array">
+      <obj_property name="ElementShortName">error_count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">error_count[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fib_sim/top0/CPU/RF/regfile" type="array">
+      <obj_property name="ElementShortName">regfile[0:31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">regfile[0:31][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/fib_sim/check" type="array">
+      <obj_property name="ElementShortName">check[1:0]</obj_property>
+      <obj_property name="ObjectShortName">check[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fib_sim/out0" type="array">
+      <obj_property name="ElementShortName">out0[4:0]</obj_property>
+      <obj_property name="ObjectShortName">out0[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fib_sim/an" type="array">
+      <obj_property name="ElementShortName">an[2:0]</obj_property>
+      <obj_property name="ObjectShortName">an[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fib_sim/seg" type="array">
+      <obj_property name="ElementShortName">seg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">seg[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fib_sim/ready" type="logic">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+</wave_config>

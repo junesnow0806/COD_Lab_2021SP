@@ -1,0 +1,2 @@
+InstrMem.v,verilog,xil_defaultlib,../../../../COD_lab4.gen/sources_1/ip/InstrMem/sim/InstrMem.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

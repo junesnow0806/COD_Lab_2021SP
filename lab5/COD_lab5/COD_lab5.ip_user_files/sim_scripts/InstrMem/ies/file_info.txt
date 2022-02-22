@@ -1,0 +1,3 @@
+dist_mem_gen_v8_0.v,verilog,dist_mem_gen_v8_0_13,../../../ipstatic/simulation/dist_mem_gen_v8_0.v,
+InstrMem.v,verilog,xil_defaultlib,../../../../COD_lab5.gen/sources_1/ip/InstrMem/sim/InstrMem.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

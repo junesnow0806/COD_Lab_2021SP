@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun 10 14:50:09 2021
+# Process ID: 5836
+# Current directory: D:/USTC/COD_LAB_2021/lab5/COD_lab5/COD_lab5.runs/InstrMem_synth_1
+# Command line: vivado.exe -log InstrMem.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source InstrMem.tcl
+# Log file: D:/USTC/COD_LAB_2021/lab5/COD_lab5/COD_lab5.runs/InstrMem_synth_1/InstrMem.vds
+# Journal file: D:/USTC/COD_LAB_2021/lab5/COD_lab5/COD_lab5.runs/InstrMem_synth_1\vivado.jou
+#-----------------------------------------------------------
+source InstrMem.tcl -notrace

@@ -1,0 +1,9 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/USTC/COD_LAB_2021/lab1/COD_lab1/COD_lab1.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+D:/USTC/COD_LAB_2021/lab1/COD_lab1/COD_lab1.srcs/sim_1/new/ALU_fpga_sim.v,1617171082,verilog,,,,ALU_fpga_sim,,,,,,,,
+D:/USTC/COD_LAB_2021/lab1/COD_lab1/COD_lab1.srcs/sim_1/new/ALU_simulation.v,1617156107,verilog,,,,ALU_simulation,,,,,,,,
+D:/USTC/COD_LAB_2021/lab1/COD_lab1/COD_lab1.srcs/sim_1/new/FLS_simulation.v,1617242445,verilog,,,,FLS_simulation,,,,,,,,
+D:/USTC/COD_LAB_2021/lab1/COD_lab1/COD_lab1.srcs/sources_1/new/FLS.v,1617242931,verilog,,D:/USTC/COD_LAB_2021/lab1/COD_lab1/COD_lab1.srcs/sim_1/new/FLS_simulation.v,,ALU_module;FLS,,,,,,,,

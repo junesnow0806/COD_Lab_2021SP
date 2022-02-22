@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1617267959">
+  <File Type="ROUTE-PWR" Name="FLS_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="FLS.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="FLS_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="FLS_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="FLS.msk"/>
+  <File Type="ROUTE-CLK" Name="FLS_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="FLS.vdi"/>
+  <File Type="BG-BIT" Name="FLS.bit"/>
+  <File Type="BG-DRC" Name="FLS.drc"/>
+  <File Type="BG-BGN" Name="FLS.bgn"/>
+  <File Type="BG-BIN" Name="FLS.bin"/>
+  <File Type="BITSTR-RBT" Name="FLS.rbt"/>
+  <File Type="BITSTR-NKY" Name="FLS.nky"/>
+  <File Type="BITSTR-BMM" Name="FLS_bd.bmm"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="FLS_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="FLS.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="FLS_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="FLS.sysdef"/>
+  <File Type="ROUTE-DRC-RPX" Name="FLS_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="FLS.ltx"/>
+  <File Type="RCFI_FILE" Name="FLS.rcfi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="FLS_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="FLS.hwdef"/>
+  <File Type="PLACE-IO" Name="FLS_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="FLS_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="FLS_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="FLS_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="FLS_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="FLS_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="FLS_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="FLS_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="FLS_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="FLS_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="FLS_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="FLS_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="FLS_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="FLS_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="FLS_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="FLS_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW" Name="FLS_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="FLS_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="FLS_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="FLS_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="FLS_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="FLS_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="FLS_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="FLS_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="FLS_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="FLS_postroute_physopt_bb.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="FLS_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="FLS.pdi"/>
+  <File Type="CFI_FILE" Name="FLS.cfi"/>
+  <File Type="RNPI_FILE" Name="FLS.rnpi"/>
+  <File Type="NPI_FILE" Name="FLS.npi"/>
+  <File Type="RBD_FILE" Name="FLS.rbd"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/FLS.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="FLS"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/FLS_constraints.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

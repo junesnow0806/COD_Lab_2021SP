@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr  1 17:06:06 2021
+# Process ID: 11308
+# Current directory: D:/USTC/COD_LAB_2021/lab1/FLS/FLS.runs/synth_1
+# Command line: vivado.exe -log FLS.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FLS.tcl
+# Log file: D:/USTC/COD_LAB_2021/lab1/FLS/FLS.runs/synth_1/FLS.vds
+# Journal file: D:/USTC/COD_LAB_2021/lab1/FLS/FLS.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source FLS.tcl -notrace

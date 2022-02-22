@@ -1,0 +1,689 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Apr 19 21:01:24 2021
+# Process ID: 10644
+# Current directory: D:/USTC/COD_LAB_2021/lab2/FIFO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10668 D:\USTC\COD_LAB_2021\lab2\FIFO\FIFO.xpr
+# Log file: D:/USTC/COD_LAB_2021/lab2/FIFO/vivado.log
+# Journal file: D:/USTC/COD_LAB_2021/lab2/FIFO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Software/Vivado/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:09 . Memory (MB): peak = 1186.984 ; gain = 0.000
+update_compile_order -fileset sources_1
+set_property top regfile_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'regfile_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim/distributed.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj regfile_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+"xelab -wto fa9d71d907824be6b20d599b366b22c0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot regfile_sim_behav xil_defaultlib.regfile_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto fa9d71d907824be6b20d599b366b22c0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot regfile_sim_behav xil_defaultlib.regfile_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.regfile_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot regfile_sim_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim/xsim.dir/regfile_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Apr 19 21:19:11 2021...
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1186.984 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "regfile_sim_behav -key {Behavioral:sim_1:Functional:regfile_sim} -tclbatch {regfile_sim.tcl} -view {D:/USTC/COD_LAB_2021/lab2/FIFO/regfile_sim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/USTC/COD_LAB_2021/lab2/FIFO/regfile_sim_behav.wcfg
+WARNING: Simulation object /FIFO_sim/clk was not found in the design.
+WARNING: Simulation object /FIFO_sim/fifo/pulse_400hz was not found in the design.
+WARNING: Simulation object /FIFO_sim/rst was not found in the design.
+WARNING: Simulation object /FIFO_sim/in was not found in the design.
+WARNING: Simulation object /FIFO_sim/enq was not found in the design.
+WARNING: Simulation object /FIFO_sim/fifo/enq_edge was not found in the design.
+WARNING: Simulation object /FIFO_sim/fifo/we was not found in the design.
+WARNING: Simulation object /FIFO_sim/fifo/wa was not found in the design.
+WARNING: Simulation object /FIFO_sim/fifo/wd was not found in the design.
+WARNING: Simulation object /FIFO_sim/fifo/RF/regfile was not found in the design.
+WARNING: Simulation object /FIFO_sim/full was not found in the design.
+WARNING: Simulation object /FIFO_sim/emp was not found in the design.
+WARNING: Simulation object /FIFO_sim/deq was not found in the design.
+WARNING: Simulation object /FIFO_sim/fifo/deq_edge was not found in the design.
+WARNING: Simulation object /FIFO_sim/fifo/ra0 was not found in the design.
+WARNING: Simulation object /FIFO_sim/fifo/rd0 was not found in the design.
+WARNING: Simulation object /FIFO_sim/out was not found in the design.
+WARNING: Simulation object /FIFO_sim/fifo/head was not found in the design.
+WARNING: Simulation object /FIFO_sim/fifo/tail was not found in the design.
+WARNING: Simulation object /FIFO_sim/fifo/valid was not found in the design.
+WARNING: Simulation object /FIFO_sim/fifo/ra1 was not found in the design.
+WARNING: Simulation object /FIFO_sim/fifo/rd1 was not found in the design.
+WARNING: Simulation object /FIFO_sim/fifo/ah_an was not found in the design.
+WARNING: Simulation object /FIFO_sim/an was not found in the design.
+WARNING: Simulation object /FIFO_sim/seg was not found in the design.
+source regfile_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 1186.984 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'regfile_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1186.984 ; gain = 0.000
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1186.984 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'regfile_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim/distributed.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj regfile_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+"xelab -wto fa9d71d907824be6b20d599b366b22c0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot regfile_sim_behav xil_defaultlib.regfile_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto fa9d71d907824be6b20d599b366b22c0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot regfile_sim_behav xil_defaultlib.regfile_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1186.984 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'regfile_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim/distributed.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj regfile_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.srcs/sources_1/new/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.srcs/sim_1/new/regfile_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile_sim
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+"xelab -wto fa9d71d907824be6b20d599b366b22c0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot regfile_sim_behav xil_defaultlib.regfile_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto fa9d71d907824be6b20d599b366b22c0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot regfile_sim_behav xil_defaultlib.regfile_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.register_file(DEPTH=3,WIDTH=4)
+Compiling module xil_defaultlib.regfile_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot regfile_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+$finish called at time : 475 ns : File "D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.srcs/sim_1/new/regfile_sim.v" Line 63
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1186.984 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'regfile_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim/distributed.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj regfile_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.srcs/sources_1/new/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.srcs/sim_1/new/regfile_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile_sim
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+"xelab -wto fa9d71d907824be6b20d599b366b22c0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot regfile_sim_behav xil_defaultlib.regfile_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto fa9d71d907824be6b20d599b366b22c0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot regfile_sim_behav xil_defaultlib.regfile_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.register_file(DEPTH=3,WIDTH=4)
+Compiling module xil_defaultlib.regfile_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot regfile_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+$finish called at time : 475 ns : File "D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.srcs/sim_1/new/regfile_sim.v" Line 63
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1186.984 ; gain = 0.000
+save_wave_config {D:/USTC/COD_LAB_2021/lab2/FIFO/regfile_sim_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property top distributed_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'distributed_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim/distributed.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj distributed_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.gen/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.srcs/sim_1/new/distributed_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module distributed_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+"xelab -wto fa9d71d907824be6b20d599b366b22c0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0_13 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot distributed_sim_behav xil_defaultlib.distributed_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto fa9d71d907824be6b20d599b366b22c0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0_13 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot distributed_sim_behav xil_defaultlib.distributed_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.dist_mem_gen_0
+Compiling module xil_defaultlib.distributed_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot distributed_sim_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim/xsim.dir/distributed_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Apr 19 21:40:40 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1186.984 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "distributed_sim_behav -key {Behavioral:sim_1:Functional:distributed_sim} -tclbatch {distributed_sim.tcl} -view {D:/USTC/COD_LAB_2021/lab2/FIFO/regfile_sim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/USTC/COD_LAB_2021/lab2/FIFO/regfile_sim_behav.wcfg
+WARNING: Simulation object /regfile_sim/RF/clk was not found in the design.
+WARNING: Simulation object /regfile_sim/RF/we was not found in the design.
+WARNING: Simulation object /regfile_sim/RF/wa was not found in the design.
+WARNING: Simulation object /regfile_sim/RF/wd was not found in the design.
+WARNING: Simulation object /regfile_sim/RF/ra0 was not found in the design.
+WARNING: Simulation object /regfile_sim/RF/rd0 was not found in the design.
+WARNING: Simulation object /regfile_sim/RF/ra1 was not found in the design.
+WARNING: Simulation object /regfile_sim/RF/rd1 was not found in the design.
+source distributed_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+$stop called at time : 196 ns : File "D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.srcs/sim_1/new/distributed_sim.v" Line 58
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'distributed_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1186.984 ; gain = 0.000
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1186.984 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'distributed_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim/distributed.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj distributed_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+"xelab -wto fa9d71d907824be6b20d599b366b22c0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0_13 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot distributed_sim_behav xil_defaultlib.distributed_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto fa9d71d907824be6b20d599b366b22c0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0_13 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot distributed_sim_behav xil_defaultlib.distributed_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+$stop called at time : 196 ns : File "D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.srcs/sim_1/new/distributed_sim.v" Line 58
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1186.984 ; gain = 0.000
+save_wave_config {D:/USTC/COD_LAB_2021/lab2/FIFO/regfile_sim_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property top blk_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'blk_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim/distributed.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj blk_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.srcs/sim_1/new/blk_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_sim
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+"xelab -wto fa9d71d907824be6b20d599b366b22c0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot blk_sim_behav xil_defaultlib.blk_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto fa9d71d907824be6b20d599b366b22c0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot blk_sim_behav xil_defaultlib.blk_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.blk_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot blk_sim_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim/xsim.dir/blk_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Apr 19 22:04:06 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1186.984 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "blk_sim_behav -key {Behavioral:sim_1:Functional:blk_sim} -tclbatch {blk_sim.tcl} -view {D:/USTC/COD_LAB_2021/lab2/FIFO/regfile_sim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/USTC/COD_LAB_2021/lab2/FIFO/regfile_sim_behav.wcfg
+WARNING: Simulation object /distributed_sim/clk was not found in the design.
+WARNING: Simulation object /distributed_sim/a was not found in the design.
+WARNING: Simulation object /distributed_sim/d was not found in the design.
+WARNING: Simulation object /distributed_sim/we was not found in the design.
+WARNING: Simulation object /distributed_sim/spo was not found in the design.
+source blk_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module blk_sim.blk_mem_gen_0.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+$stop called at time : 206 ns : File "D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.srcs/sim_1/new/blk_sim.v" Line 60
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'blk_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1186.984 ; gain = 0.000
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1186.984 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'blk_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim/distributed.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj blk_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+"xelab -wto fa9d71d907824be6b20d599b366b22c0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot blk_sim_behav xil_defaultlib.blk_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto fa9d71d907824be6b20d599b366b22c0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot blk_sim_behav xil_defaultlib.blk_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Block Memory Generator module blk_sim.blk_mem_gen_0.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+$stop called at time : 206 ns : File "D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.srcs/sim_1/new/blk_sim.v" Line 60
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1186.984 ; gain = 0.000
+save_wave_config {D:/USTC/COD_LAB_2021/lab2/FIFO/regfile_sim_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+ERROR: [Vivado 12-106] *** Exception: java.lang.NullPointerException (See D:/USTC/COD_LAB_2021/lab2/FIFO/vivado_pid10644.debug)
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+
+    while executing
+"rdi::set_property sim_mode behavioral sim_1"
+    invoked from within
+"set_property sim_mode "behavioral" $fs_obj"
+    (procedure "xcs_set_simulation_flow" line 24)
+    invoked from within
+"xcs_set_simulation_flow $a_sim_vars(s_simset) $a_sim_vars(s_mode) $a_sim_vars(s_type) a_sim_vars(s_flow_dir_key) a_sim_vars(s_simulation_flow)"
+    (procedure "usf_xsim_setup_simulation" line 33)
+    invoked from within
+"usf_xsim_setup_simulation"
+    (procedure "tclapp::xilinx::xsim::setup" line 19)
+    invoked from within
+"tclapp::xilinx::xsim::setup { -simset sim_1 -mode behavioral -run_dir D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim -int_os_type 64 -int_de..."
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1186.984 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property top FIFO_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIFO_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim/distributed.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FIFO_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.srcs/sources_1/new/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.srcs/sources_1/new/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.srcs/sim_1/new/FIFO_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+"xelab -wto fa9d71d907824be6b20d599b366b22c0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot FIFO_sim_behav xil_defaultlib.FIFO_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto fa9d71d907824be6b20d599b366b22c0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot FIFO_sim_behav xil_defaultlib.FIFO_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.register_file(DEPTH=3,WIDTH=4)
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FIFO_sim_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim/xsim.dir/FIFO_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim/xsim.dir/FIFO_sim_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Apr 19 22:47:46 2021. For additional details about this file, please refer to the WebTalk help file at D:/Software/Vivado/Vivado/2020.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Apr 19 22:47:46 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1186.984 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FIFO_sim_behav -key {Behavioral:sim_1:Functional:FIFO_sim} -tclbatch {FIFO_sim.tcl} -view {D:/USTC/COD_LAB_2021/lab2/FIFO/regfile_sim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/USTC/COD_LAB_2021/lab2/FIFO/regfile_sim_behav.wcfg
+WARNING: Simulation object /blk_sim/clka was not found in the design.
+WARNING: Simulation object /blk_sim/addra was not found in the design.
+WARNING: Simulation object /blk_sim/ena was not found in the design.
+WARNING: Simulation object /blk_sim/dina was not found in the design.
+WARNING: Simulation object /blk_sim/wea was not found in the design.
+WARNING: Simulation object /blk_sim/douta was not found in the design.
+source FIFO_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 664 ns : File "D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.srcs/sim_1/new/FIFO_sim.v" Line 49
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FIFO_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1186.984 ; gain = 0.000
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1186.984 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIFO_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim/distributed.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FIFO_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+"xelab -wto fa9d71d907824be6b20d599b366b22c0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot FIFO_sim_behav xil_defaultlib.FIFO_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto fa9d71d907824be6b20d599b366b22c0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot FIFO_sim_behav xil_defaultlib.FIFO_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+$finish called at time : 664 ns : File "D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.srcs/sim_1/new/FIFO_sim.v" Line 49
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1186.984 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Software/Vivado/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIFO_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim/distributed.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FIFO_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim'
+"xelab -wto fa9d71d907824be6b20d599b366b22c0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot FIFO_sim_behav xil_defaultlib.FIFO_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto fa9d71d907824be6b20d599b366b22c0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot FIFO_sim_behav xil_defaultlib.FIFO_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+$finish called at time : 664 ns : File "D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.srcs/sim_1/new/FIFO_sim.v" Line 49
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1186.984 ; gain = 0.000
+archive_project D:/USTC/2021_/lab/FIFO.xpr.zip -temp_dir D:/USTC/COD_LAB_2021/lab2/FIFO/.Xil/Vivado-10644-LAPTOP-JIKPBC87 -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'D:/USTC/COD_LAB_2021/lab2/FIFO/.Xil/Vivado-10644-LAPTOP-JIKPBC87' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Software/Vivado/Vivado/2020.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [IP_Flow 19-7005] Skipping external file d:/USTC/COD_LAB_2021/lab2/FIFO/distributed.coe
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'dist_mem_gen_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'blk_mem_gen_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-133] re-setting run 'dist_mem_gen_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'blk_mem_gen_0_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'blk_mem_gen_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'blk_mem_gen_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'dist_mem_gen_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'dist_mem_gen_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+INFO: [Coretcl 2-1210] Compressing project files and data...
+INFO: [Coretcl 2-1215] Project archived (D:/USTC/2021_/lab/FIFO.xpr.zip)
+INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
+archive_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1186.984 ; gain = 0.000
+save_wave_config {D:/USTC/COD_LAB_2021/lab2/FIFO/regfile_sim_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 19 23:29:47 2021...

@@ -1,0 +1,18 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/USTC/COD_LAB_2021/lab5/COD_lab5/COD_lab5.gen/sources_1/ip/DataMem/sim/DataMem.v,1621494799,verilog,,D:/USTC/COD_LAB_2021/lab5/COD_lab5/COD_lab5.gen/sources_1/ip/InstrMem/sim/InstrMem.v,,DataMem,,,,,,,,
+D:/USTC/COD_LAB_2021/lab5/COD_lab5/COD_lab5.gen/sources_1/ip/InstrMem/sim/InstrMem.v,1623307802,verilog,,D:/USTC/COD_LAB_2021/lab5/COD_lab5/COD_lab5.srcs/sources_1/new/ALU.v,,InstrMem,,,,,,,,
+D:/USTC/COD_LAB_2021/lab5/COD_lab5/COD_lab5.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+D:/USTC/COD_LAB_2021/lab5/COD_lab5/COD_lab5.srcs/sim_1/new/RF_sim.v,1620804425,verilog,,,,RF_sim,,,,,,,,
+D:/USTC/COD_LAB_2021/lab5/COD_lab5/COD_lab5.srcs/sim_1/new/cpu_sim.v,1622549378,verilog,,,,cpu_sim,,,,,,,,
+D:/USTC/COD_LAB_2021/lab5/COD_lab5/COD_lab5.srcs/sim_1/new/fib_sim.v,1623300650,verilog,,,,fib_sim,,,,,,,,
+D:/USTC/COD_LAB_2021/lab5/COD_lab5/COD_lab5.srcs/sources_1/new/ALU.v,1619953197,verilog,,D:/USTC/COD_LAB_2021/lab5/COD_lab5/COD_lab5.srcs/sources_1/new/bpu.v,,ALU,,,,,,,,
+D:/USTC/COD_LAB_2021/lab5/COD_lab5/COD_lab5.srcs/sources_1/new/bpu.v,1623304654,verilog,,D:/USTC/COD_LAB_2021/lab5/COD_lab5/COD_lab5.srcs/sources_1/new/cpu_v2.v,,bpu,,,,,,,,
+D:/USTC/COD_LAB_2021/lab5/COD_lab5/COD_lab5.srcs/sources_1/new/cpu_pl.v,1621938408,verilog,,D:/USTC/COD_LAB_2021/lab5/COD_lab5/COD_lab5.srcs/sources_1/new/pdu_pl.v,,cpu_pl,,,,,,,,
+D:/USTC/COD_LAB_2021/lab5/COD_lab5/COD_lab5.srcs/sources_1/new/cpu_v2.v,1623304523,verilog,,D:/USTC/COD_LAB_2021/lab5/COD_lab5/COD_lab5.srcs/sources_1/new/pdu_pl.v,,cpu_v2,,,,,,,,
+D:/USTC/COD_LAB_2021/lab5/COD_lab5/COD_lab5.srcs/sources_1/new/pdu_pl.v,1621415171,verilog,,D:/USTC/COD_LAB_2021/lab5/COD_lab5/COD_lab5.srcs/sources_1/new/register_file.v,,pdu_pl,,,,,,,,
+D:/USTC/COD_LAB_2021/lab5/COD_lab5/COD_lab5.srcs/sources_1/new/register_file.v,1621435236,verilog,,D:/USTC/COD_LAB_2021/lab5/COD_lab5/COD_lab5.srcs/sources_1/new/top_v2.v,,register_file,,,,,,,,
+D:/USTC/COD_LAB_2021/lab5/COD_lab5/COD_lab5.srcs/sources_1/new/top.v,1621517486,verilog,,D:/USTC/COD_LAB_2021/lab5/COD_lab5/COD_lab5.srcs/sim_1/new/fib_sim.v,,top,,,,,,,,
+D:/USTC/COD_LAB_2021/lab5/COD_lab5/COD_lab5.srcs/sources_1/new/top_v2.v,1623221298,verilog,,D:/USTC/COD_LAB_2021/lab5/COD_lab5/COD_lab5.srcs/sim_1/new/fib_sim.v,,top_v2,,,,,,,,

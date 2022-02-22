@@ -1,0 +1,82 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 2021/03/31 14:49:06
+// Design Name: 
+// Module Name: FLS
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module FLS(
+    input clk,rst,en,
+    input [6:0] d,
+    output reg [6:0] f
+);
+parameter RESET = 2'b00;
+parameter IN1 = 2'b01;
+parameter IN2 = 2'b10;
+parameter OUT = 2'b11;
+reg [1:0] cs,ns;
+reg [6:0]f1,f2,temp1,temp2;
+//有限状态机第一部分
+always @(*)
+begin
+    if(en && rst == 0)
+    begin
+        case(cs)
+            RESET: 
+            begin
+            ns = IN1; f2 = d;
+            end
+            IN1: 
+            begin
+            ns = IN2; f1 = f2; f2 = d;
+            end
+            IN2:
+            begin
+            ns = OUT;
+            end
+            OUT: 
+            begin
+            ns = OUT; temp1 = f1; temp2 = f2; f2 = temp2 + temp1; f1 = temp2;
+            end
+            default: ns = RESET;
+        endcase
+    end
+    else if(rst == 1)
+        begin
+            ns = RESET; f2 = 7'b0; f1 = 7'b0;
+        end 
+    else ns = cs;
+end
+//有限状态机第二部分
+always @(posedge clk)
+begin
+    if(rst) cs <= RESET;
+    else cs <= ns;
+end
+//有限状态机第三部分
+always @(*)
+begin
+    case(cs)
+        RESET: f = 7'b0;
+        IN1: f = 7'b0;
+        IN2: f = 7'b0;
+        OUT: f = temp1;
+        default: f = 7'b0;
+    endcase
+end
+endmodule

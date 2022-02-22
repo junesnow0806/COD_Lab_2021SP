@@ -1,0 +1,94 @@
+
+QuickSort.om：     文件格式 elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00010054 <_start>:
+   10054:	10004693          	xori	a3,zero,256
+   10058:	00001137          	lui	sp,0x1
+   1005c:	00004533          	xor	a0,zero,zero
+   10060:	000045b3          	xor	a1,zero,zero
+   10064:	fff68613          	addi	a2,a3,-1
+   10068:	00261613          	slli	a2,a2,0x2
+   1006c:	024000ef          	jal	ra,10090 <QuickSort>
+   10070:	00068293          	mv	t0,a3
+   10074:	00050313          	mv	t1,a0
+   10078:	00229293          	slli	t0,t0,0x2
+   1007c:	00231313          	slli	t1,t1,0x2
+
+00010080 <Loop>:
+   10080:	00032383          	lw	t2,0(t1)
+   10084:	00430313          	addi	t1,t1,4
+   10088:	fe534ce3          	blt	t1,t0,10080 <Loop>
+
+0001008c <infinity_loop>:
+   1008c:	0000006f          	j	1008c <infinity_loop>
+
+00010090 <QuickSort>:
+   10090:	0cc5da63          	ble	a2,a1,10164 <QuickSortReturn>
+   10094:	0005e333          	or	t1,a1,zero
+   10098:	000663b3          	or	t2,a2,zero
+   1009c:	006502b3          	add	t0,a0,t1
+   100a0:	0002a283          	lw	t0,0(t0)
+
+000100a4 <PartationFirstStart>:
+   100a4:	04735263          	ble	t2,t1,100e8 <PartationEnd>
+   100a8:	00750e33          	add	t3,a0,t2
+   100ac:	000e2e03          	lw	t3,0(t3)
+   100b0:	005e4663          	blt	t3,t0,100bc <PartationFirstEnd>
+   100b4:	ffc38393          	addi	t2,t2,-4
+   100b8:	fedff06f          	j	100a4 <PartationFirstStart>
+
+000100bc <PartationFirstEnd>:
+   100bc:	00650eb3          	add	t4,a0,t1
+   100c0:	01cea023          	sw	t3,0(t4)
+
+000100c4 <PartationSecondStart>:
+   100c4:	02735263          	ble	t2,t1,100e8 <PartationEnd>
+   100c8:	00650e33          	add	t3,a0,t1
+   100cc:	000e2e03           	lw	t3,0(t3)
+   100d0:	01c2c663          	blt	t0,t3,100dc <PartationSecondEnd>
+   100d4:	00430313          	addi	t1,t1,4
+   100d8:	fedff06f          	j	100c4 <PartationSecondStart>
+
+000100dc <PartationSecondEnd>:
+   100dc:	00750eb3          	add	t4,a0,t2
+   100e0:	01cea023          	sw	t3,0(t4)
+   100e4:	fc7340e3          	blt	t1,t2,100a4 <PartationFirstStart>
+
+000100e8 <PartationEnd>:
+   100e8:	00650eb3          	add	t4,a0,t1
+   100ec:	005ea023          	sw	t0,0(t4)
+   100f0:	ffc10113          	addi	sp,sp,-4 # ffc <_start-0xf058>
+   100f4:	00112023          	sw	ra,0(sp)
+   100f8:	ffc10113          	addi	sp,sp,-4
+   100fc:	00b12023          	sw	a1,0(sp)
+   10100:	ffc10113          	addi	sp,sp,-4
+   10104:	00c12023          	sw	a2,0(sp)
+   10108:	ffc10113          	addi	sp,sp,-4
+   1010c:	00612023          	sw	t1,0(sp)
+   10110:	ffc30613          	addi	a2,t1,-4
+   10114:	f7dff0ef          	jal	ra,10090 <QuickSort>
+   10118:	00012303          	lw	t1,0(sp)
+   1011c:	00410113          	addi	sp,sp,4
+   10120:	00012603          	lw	a2,0(sp)
+   10124:	00410113          	addi	sp,sp,4
+   10128:	00012583          	lw	a1,0(sp)
+   1012c:	ffc10113          	addi	sp,sp,-4
+   10130:	00c12023          	sw	a2,0(sp)
+   10134:	ffc10113          	addi	sp,sp,-4
+   10138:	00612023          	sw	t1,0(sp)
+   1013c:	00430593          	addi	a1,t1,4
+   10140:	f51ff0ef          	jal	ra,10090 <QuickSort>
+   10144:	00012303          	lw	t1,0(sp)
+   10148:	00410113          	addi	sp,sp,4
+   1014c:	00012603          	lw	a2,0(sp)
+   10150:	00410113          	addi	sp,sp,4
+   10154:	00012583          	lw	a1,0(sp)
+   10158:	00410113          	addi	sp,sp,4
+   1015c:	00012083          	lw	ra,0(sp)
+   10160:	00410113          	addi	sp,sp,4
+
+00010164 <QuickSortReturn>:
+   10164:	00008067          	ret

@@ -1,0 +1,47 @@
+module blk_sim();
+reg clka,ena,wea;
+reg [3:0] addra;
+reg [7:0] dina;
+wire [7:0] douta;
+
+initial clka=0;
+always #5 clka=~clka;
+
+initial
+ begin
+   ena = 0;
+   #100 ena=1;
+ end 
+
+integer i,j;
+initial
+begin
+  addra = 0; #20;
+  for( i=0; i<=32; i=i+1)
+     begin 
+       if( i<16 ) begin addra = i; #20; end
+       else if( i==16 ) #100; 
+       else  begin ena=1; addra = i - 17; #20; end          
+     end
+     #50   $finish; 
+end 
+
+initial 
+begin
+   wea=0;  addra=0; dina=0; 
+   #400 wea=1;
+   for(j=0; j<16; j=j+1) 
+     begin
+       addra = j;
+       dina = j + 5;
+       #20;
+    end   
+end  
+blk_mem_gen_0 blk_mem_gen_0 (
+  .clka(clka),    // input wire clka
+  .ena(ena),      // input wire ena
+  .wea(wea),      // input wire [0 : 0] wea
+  .addra(addra),  // input wire [3 : 0] addra
+  .dina(dina),    // input wire [7 : 0] dina
+  .douta(douta)  // output wire [7 : 0] douta
+);

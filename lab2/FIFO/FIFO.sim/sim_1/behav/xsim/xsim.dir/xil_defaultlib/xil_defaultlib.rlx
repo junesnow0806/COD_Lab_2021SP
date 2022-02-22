@@ -1,0 +1,13 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1617895266,verilog,,D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.srcs/sim_1/new/blk_sim.v,,blk_mem_gen_0,,,,,,,,
+D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.gen/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,1617892886,verilog,,D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.srcs/sim_1/new/distributed_sim.v,,dist_mem_gen_0,,,,,,,,
+D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.srcs/sim_1/new/FIFO_sim.v,1617980239,verilog,,,,FIFO_sim,,,,,,,,
+D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.srcs/sim_1/new/blk_sim.v,1618841027,verilog,,,,blk_sim,,,,,,,,
+D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.srcs/sim_1/new/distributed_sim.v,1618273630,verilog,,,,distributed_sim,,,,,,,,
+D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.srcs/sim_1/new/regfile_sim.v,1618838745,verilog,,,,regfile_sim,,,,,,,,
+D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.srcs/sources_1/new/FIFO.v,1618273417,verilog,,D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.srcs/sources_1/new/register_file.v,,FIFO,,,,,,,,
+D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.srcs/sources_1/new/register_file.v,1617969861,verilog,,D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.srcs/sim_1/new/FIFO_sim.v,,register_file,,,,,,,,

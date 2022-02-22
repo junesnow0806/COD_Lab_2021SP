@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../COD_lab5.gen/sources_1/ip/DataMem/sim/DataMem.v" \
+"../../../../COD_lab5.gen/sources_1/ip/InstrMem/sim/InstrMem.v" \
+"../../../../COD_lab5.srcs/sources_1/new/ALU.v" \
+"../../../../COD_lab5.srcs/sources_1/new/cpu_pl.v" \
+"../../../../COD_lab5.srcs/sources_1/new/register_file.v" \
+"../../../../COD_lab5.srcs/sim_1/new/cpu_sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

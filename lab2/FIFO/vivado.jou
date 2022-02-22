@@ -1,0 +1,71 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Apr 19 21:01:24 2021
+# Process ID: 10644
+# Current directory: D:/USTC/COD_LAB_2021/lab2/FIFO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10668 D:\USTC\COD_LAB_2021\lab2\FIFO\FIFO.xpr
+# Log file: D:/USTC/COD_LAB_2021/lab2/FIFO/vivado.log
+# Journal file: D:/USTC/COD_LAB_2021/lab2/FIFO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/USTC/COD_LAB_2021/lab2/FIFO/FIFO.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top regfile_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config D:/USTC/COD_LAB_2021/lab2/FIFO/regfile_sim_behav.wcfg
+source regfile_sim.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {D:/USTC/COD_LAB_2021/lab2/FIFO/regfile_sim_behav.wcfg}
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top distributed_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config D:/USTC/COD_LAB_2021/lab2/FIFO/regfile_sim_behav.wcfg
+source distributed_sim.tcl
+relaunch_sim
+save_wave_config {D:/USTC/COD_LAB_2021/lab2/FIFO/regfile_sim_behav.wcfg}
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top blk_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config D:/USTC/COD_LAB_2021/lab2/FIFO/regfile_sim_behav.wcfg
+source blk_sim.tcl
+relaunch_sim
+save_wave_config {D:/USTC/COD_LAB_2021/lab2/FIFO/regfile_sim_behav.wcfg}
+close_sim
+launch_simulation
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top FIFO_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config D:/USTC/COD_LAB_2021/lab2/FIFO/regfile_sim_behav.wcfg
+source FIFO_sim.tcl
+relaunch_sim
+relaunch_sim
+archive_project D:/USTC/2021_/lab/FIFO.xpr.zip -temp_dir D:/USTC/COD_LAB_2021/lab2/FIFO/.Xil/Vivado-10644-LAPTOP-JIKPBC87 -force -include_local_ip_cache
+save_wave_config {D:/USTC/COD_LAB_2021/lab2/FIFO/regfile_sim_behav.wcfg}
+close_sim
